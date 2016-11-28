@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Profile View Project Details Page</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="testStyle.css" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="header" class="navbar navbar-fixed-top">
+    <figure id="logo" class="navbar-brand">
+      <a href="notificationsPage.html"><img src="Logo.png"></a>
+      <h1>
+        ΤΜΗΜΑ ΕΠΙΣΤΗΜΗΣ ΥΠΟΛΟΓΙΣΤΩΝ
+      </h1>
+      <h3>
+        Σύστημα Διαχείρισης Εργασιών
+      </h3>
+    </figure>
+    
+      <div class="container">
+        <div id="containerheader" class="navbar-header">
+          <!-- <a class="brand pull-left" href="#" id="logo"><img src="Logo.png"></a> -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="projectsPage.html" class="navbar-brand pull-right">(logout)</a>
+          <a href="profileView_MyProfile.html" class="navbar-brand pull-right">dagianta</a>
+          <form action="SearchResultsLoggedIn.html" class="navbar-form navbar-right pull-right" id="searchbar" role="search" method="post">
+            <div class="form-group has-feedback has-feedback-right">
+              <input type="text" placeholder="Search" name="search" class="form-control">
+              <i class="btn btn-link form-control-feedback glyphicon glyphicon-search"></i>
+            </div>
+          </form>
+          <a href="projectsPageLoggedIn.html" class="navbar-brand">
+            <img src="Projects.png">
+          </a>
+          <a href="myGroupsPage.html" class="navbar-brand">
+            <img src="Groups.png">
+          </a>
+          <a href="notificationsPage.html" class="navbar-brand">
+            <img src="Notifications.png">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="subheader">
+      <div class="page-header" id="prof">
+        <h2><a href="profileView_OtherProfile.html">MAVRIDIS GEORGIOS</a>/PROJECT DETAILS</h2>
+      </div>
+      <ul>
+        <li style="border-bottom: none;">
+          <b>Tichu - CS252</b> <i>(Year: 2013)</i>
+          <br><br>Professor: Vassilis Christophides
+          <br>Final Grade: 7
+          <br>Group Members: Eirini Degkleri
+          <br>Description: <i style="font-style: italic;">Implement a game of tichu for four players.</i>
+          <br><br>Files:
+          <br><ul style="list-style-type: none;">
+            <li style="border-bottom: none;margin-bottom: 0px;"><img src="File.png" height="25px" width="20px"> <a href="" style="font-weight: normal;">Tichu Cards</a></li>
+          </ul>
+          <br>Comments:
+          <ul>
+            <li style="border-bottom: none;"><i>Tue, 5 February 2013:</i> Ενδιαφέρον, αλλά μεγάλο.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <br><br><br>
+
+    <div id="footer" class="navbar navbar-fixed-bottom">
+      <div class="container">
+        <div id="containerheader" class="navbar-header">
+          <h1 id="lastlogin">Last login: Wednesday, 15 April 2015</h1>
+        </div>
+      </div>
+    </div>
+  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

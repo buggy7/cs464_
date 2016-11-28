@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Group Details Page Invited2Admin</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="testStyle.css" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="header" class="navbar navbar-fixed-top">
+    <figure id="logo" class="navbar-brand">
+      <a href="notificationsPage.html"><img src="Logo.png"></a>
+      <h1>
+        ΤΜΗΜΑ ΕΠΙΣΤΗΜΗΣ ΥΠΟΛΟΓΙΣΤΩΝ
+      </h1>
+      <h3>
+        Σύστημα Διαχείρισης Εργασιών
+      </h3>
+    </figure>
+    
+      <div class="container">
+        <div id="containerheader" class="navbar-header">
+          <!-- <a class="brand pull-left" href="#" id="logo"><img src="Logo.png"></a> -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="projectsPage.html" class="navbar-brand pull-right">(logout)</a>
+          <a href="profileView_MyProfile.html" class="navbar-brand pull-right">dagianta</a>
+          <form action="SearchResultsLoggedIn.html" class="navbar-form navbar-right pull-right" id="searchbar" role="search" method="post">
+            <div class="form-group has-feedback has-feedback-right">
+              <input type="text" placeholder="Search" name="search" class="form-control">
+              <i class="btn btn-link form-control-feedback glyphicon glyphicon-search"></i>
+            </div>
+          </form>
+          <a href="projectsPageLoggedIn.html" class="navbar-brand">
+            <img src="Projects.png">
+          </a>
+          <a href="myGroupsPage.html" class="navbar-brand">
+            <img src="Groups.png">
+          </a>
+          <a href="notificationsPage.html" class="navbar-brand">
+            <img src="Notifications.png">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-11" id="subheader">
+      <div class="page-header">
+        <h2>GROUP DETAILS</h2>
+      </div>
+      <ul>
+        <a href="groupDetailsPage_Invited2Passenger.html" style="text-decoration:none; color: white;"><button id="rejectbtn" class="btn btn-danger pull-right">Leave Group</button></a>
+        <button id="completebtn" class="btn btn-success pull-right" onclick="complete()"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Mark Completed</button>
+        <li>
+          <b>CS335 - Team03</b><br>
+          Network Creation - CS335<br>
+          Members: 2<b>/3</b><br>
+          <ul id="embededlist">
+            <li><a href="">Nikodemou Vassilis</a> - nikodim@csd.uoc.gr</li>
+            <li><a href="profileView_MyProfile.html">Ntagianta Anastasia</a> - dagianta@csd.uoc.gr</li>
+            <li><button id="invitememberbtn" class="btn btn-default" disabled><span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Invite</button></li>
+          </ul>
+        </li>
+      </ul>
+      <br>
+      <h5>Requested to Join</h5>
+      <ul id="members">
+        <li id="Saridak"><a href="">Saridakis Eleutherios</a> - saridakis@csd.uoc.gr       
+          <button id="rejectbtn" class="btn btn-danger pull-right" onclick="showoptcomment(1)">Reject</button>
+          <button id="acceptbtn" class="btn btn-success pull-right" onclick="accept1()">Accept</button>
+        </li>
+        <div id="optcomm1" class="form-group" hidden>
+          <textarea class="form-control" placeholder="(Optional)" id="optionalcomment"></textarea>
+          <button id="optsendbtn" class="btn btn-default pull-right" onclick="hideoptcomment(1)"><span class="glyphicon glyphicon-send"></span></button>
+          <button id="removebtn" class="btn btn-link pull-right" onclick="hideoptcomment(1)"><span class="glyphicon glyphicon-remove"></span></button>
+        </div>
+        <div id="breaks1" hidden><br><br><br><br><br></div>
+        <li id="Mavridis"><a href="profileView_OtherProfile.html">Mavridis Georgios</a> - gmavridis@csd.uoc.gr
+          <button id="rejectbtn" class="btn btn-danger pull-right" onclick="showoptcomment(2)">Reject</button>
+          <button id="acceptbtn" class="btn btn-success pull-right" onclick="accept2()">Accept</button>
+        </li>
+        <div id="optcomm2" class="form-group" hidden>
+          <textarea class="form-control" placeholder="(Optional)" id="optionalcomment"></textarea>
+          <button id="optsendbtn" class="btn btn-default pull-right" onclick="hideoptcomment(2)"><span class="glyphicon glyphicon-send"></span></button>
+          <button id="removebtn" class="btn btn-link pull-right" onclick="hideoptcomment(2)"><span class="glyphicon glyphicon-remove"></span></button>
+        </div>
+        <div id="breaks2" hidden><br><br><br><br><br></div>
+      </ul>
+      <br>
+      <h5>Invited Members</h5>
+      <ul id="members">
+        <li id="member1"><a href="">Mparka Aleksandra</a> - barka@csd.uoc.gr
+        <button id="rejectbtn" class="btn btn-danger pull-right" onclick="cancelinvitation()"><span class="glyphicon glyphicon-remove"></span>&nbsp;&nbsp;Cancel Invitation</button>
+        </li>
+      </ul>
+      <br>
+      <h5>Comments</h5>
+      <div class="form-group">
+        <textarea class="form-control" placeholder="Leave a comment" id="commentsarea"></textarea>
+        <button id="sendbtn" class="btn btn-default" onclick="insertComment()"><span class="glyphicon glyphicon-send"></span></button>
+      </div>
+      <br>
+      <ul id="members">
+        <li><a href="">Saridakis Eleutherios</a><i> - 14 April 2015 - 18:15</i></li>
+        <p id="comment"><i>Πάρτε με στην ομάδα, σας παρακαλώ!</i></p>
+        <li id="hiddencomment" hidden><a href="profileView_MyProfile.html">Ntagianta Anastasia</a><i> - # May 2015 - ##:##</i></li>
+        <p id="comment2" hidden><i>You have successfully inserted a comment</i></p>
+      </ul>
+      <br><br><br>
+    </div>
+
+    <div id="footer" class="navbar navbar-fixed-bottom">
+      <div class="container">
+        <div id="containerheader" class="navbar-header">
+          <h1 id="lastlogin">Last login: Wednesday, 15 April 2015</h1>
+        </div>
+      </div>
+    </div>
+  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      function showoptcomment (number) {
+        if (number===1) {
+          document.getElementById("optcomm1").hidden=false;
+          document.getElementById("optcomm2").hidden=true;
+          document.getElementById("breaks1").hidden=false;
+          document.getElementById("breaks2").hidden=true;
+        }
+        else {
+          document.getElementById("optcomm2").hidden=false;
+          document.getElementById("optcomm1").hidden=true;
+          document.getElementById("breaks2").hidden=false;
+          document.getElementById("breaks1").hidden=true;
+        }
+      }
+      function hideoptcomment (number) {
+        if (number===1) {
+          document.getElementById("optcomm1").hidden=true;
+          document.getElementById("breaks1").hidden=true;
+          accept1();
+        }
+        else {
+          document.getElementById("optcomm2").hidden=true;
+          document.getElementById("breaks2").hidden=true;
+          accept2();
+        }
+      }
+      function cancelinvitation () {
+        document.getElementById("member1").hidden=true;
+      }
+      function accept1()  {
+        document.getElementById("optcomm1").hidden=true;
+        document.getElementById("optcomm2").hidden=true;
+        document.getElementById("Saridak").hidden=true;
+      }
+      function accept2() {
+        document.getElementById("optcomm1").hidden=true;
+        document.getElementById("optcomm2").hidden=true;
+        document.getElementById("Mavridis").hidden=true;
+      }
+      function insertComment(){
+        document.getElementById("hiddencomment").hidden=false;
+        document.getElementById("comment2").hidden=false;
+
+      }
+      function complete() {
+        document.getElementById("completebtn").id = "completebtn1";
+        document.getElementById("completebtn1").innerHTML = "Completed";
+      }
+    </script>
+  </body>
+</html>

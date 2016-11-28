@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Project Details Page</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="testStyle.css" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="header" class="navbar navbar-fixed-top">
+    <figure id="logo" class="navbar-brand">
+      <img src="Logo.png">
+      <h1>
+        ΤΜΗΜΑ ΕΠΙΣΤΗΜΗΣ ΥΠΟΛΟΓΙΣΤΩΝ
+      </h1>
+      <h3>
+        Σύστημα Διαχείρισης Εργασιών
+      </h3>
+    </figure>
+    
+      <div class="container">
+        <div id="containerheader" class="navbar-header">
+          <!-- <a class="brand pull-left" href="#" id="logo"><img src="Logo.png"></a> -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="loginPage.html" class="navbar-brand pull-right">(login)</a>
+          <a href="" class="navbar-brand pull-right" hidden>dagianta</a>
+          <form action="SearchResultsLoggedOut.html" class="navbar-form navbar-right pull-right" id="searchbar" role="search" method="post">
+            <div class="form-group has-feedback has-feedback-right">
+              <input type="text" placeholder="Search" name="search" class="form-control">
+              <i class="btn btn-link form-control-feedback glyphicon glyphicon-search"></i>
+            </div>
+          </form>
+          <a href="projectsPage.html" class="navbar-brand">
+            <img src="Projects.png">
+          </a>
+          <a href="myGroupsPage.html" class="navbar-brand" hidden>
+            <img src="Groups.png">
+          </a>
+          <a href="notificationsPage.html" class="navbar-brand" hidden>
+            <img src="Notifications.png">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="subheader">
+      <div class="page-header">
+        <h2>PROJECT DETAILS</h2>
+      </div>
+      <ul>
+        <li>
+          <b>Graphical User Interface Development for Web</b>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;
+          Due: Fri, 29 May (Phase D) 
+          <br>CS464: Human - Computer Interaction
+          <br>Professor: Constantine Stephanidis
+          <br>Max Allowed Members: 3
+        </li>
+      </ul>
+      <p id="projectdesc">
+        You will develop the interface of the website which aims to help students <br>
+        to form groups for projects that are given in their school. The website is <br>
+        aimed at students of the Computer Science Department(CSD) at the <br>
+        University of Crete and provides (among other things) the following <br>
+        features:<br>
+        &emsp;&emsp;Browse projects of this semester<br>
+        &emsp;&emsp;Student profile management<br>
+        &emsp;&emsp;Classmates’ profile viewing<br>
+        &emsp;&emsp;Participation in group (group creation, application for participation<br>
+        &emsp;&emsp;in the team, etc.)<br>
+        &emsp;&emsp;Team Management (member aproval, member rejection, invite<br>
+        &emsp;&emsp;members, etc.)<br>
+        &emsp;&emsp;Search<br>
+      </p>
+      <br>
+      <h5>Groups</h5>
+      <ul id="groups">                            <!---TODO PROJECT LINKS-->
+        <li>
+          <a href="">CS464 - Team07</a>
+          <br>
+          Creator: Saridakis Eleutherios<br>
+          Approved Members: 1&emsp;&emsp;Pending Members: 3
+        </li>
+        <li>
+          <a href="">CS464 - Team09</a> (Completed)
+          <br>
+          Creator: Porfyrakis Emanouil<br>
+          Approved Members: 1&emsp;&emsp;Pending Members: 3
+        </li>
+        <li>
+          <a href="">CS464 - Team10</a> 
+          <br>
+          Creator: Poutouris Euaggelos<br>
+          Approved Members: 1&emsp;&emsp;Pending Members: 2
+        </li>
+        <li>
+          <a href="">CS464 - Team13</a>
+          <br>
+          Creator: Nikodemou Vassilis<br>
+          Approved Members: 2&emsp;&emsp;Pending Members: 5
+        </li>
+      </ul>
+    </div>
+    <br><br><br>
+
+    <div id="footer" class="navbar navbar-fixed-bottom">
+      <div class="container">
+        <div id="containerheader" class="navbar-header">
+          <h1 id="lastlogin">Last login: Wednesday, 15 April 2015</h1>
+        </div>
+      </div>
+    </div>
+  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      function rate(number) {
+        if (number===1) {
+          document.getElementById("stargr1").style.color = "grey";
+          document.getElementById("stargr2").style.color = "grey";
+          document.getElementById("stargr3").style.color = "grey";
+          document.getElementById("stargr4").style.color = "grey";
+          document.getElementById("stargr5").style.color = "grey";
+          document.getElementById("stargr1").style.color = "#ff9900";
+        }
+        else if (number===2) {
+          document.getElementById("stargr1").style.color = "grey";
+          document.getElementById("stargr2").style.color = "grey";
+          document.getElementById("stargr3").style.color = "grey";
+          document.getElementById("stargr4").style.color = "grey";
+          document.getElementById("stargr5").style.color = "grey";
+          document.getElementById("stargr1").style.color = "#ff9900";
+          document.getElementById("stargr2").style.color = "#ff9900";
+        }
+        else if (number===3) {
+          document.getElementById("stargr1").style.color = "grey";
+          document.getElementById("stargr2").style.color = "grey";
+          document.getElementById("stargr3").style.color = "grey";
+          document.getElementById("stargr4").style.color = "grey";
+          document.getElementById("stargr5").style.color = "grey";
+          document.getElementById("stargr1").style.color = "#ff9900";
+          document.getElementById("stargr2").style.color = "#ff9900";
+          document.getElementById("stargr3").style.color = "#ff9900";
+        }
+        else if (number===4) {
+          document.getElementById("stargr1").style.color = "grey";
+          document.getElementById("stargr2").style.color = "grey";
+          document.getElementById("stargr3").style.color = "grey";
+          document.getElementById("stargr4").style.color = "grey";
+          document.getElementById("stargr5").style.color = "grey";
+          document.getElementById("stargr1").style.color = "#ff9900";
+          document.getElementById("stargr2").style.color = "#ff9900";
+          document.getElementById("stargr3").style.color = "#ff9900";
+          document.getElementById("stargr4").style.color = "#ff9900";
+        }
+        else {
+          document.getElementById("stargr1").style.color = "grey";
+          document.getElementById("stargr2").style.color = "grey";
+          document.getElementById("stargr3").style.color = "grey";
+          document.getElementById("stargr4").style.color = "grey";
+          document.getElementById("stargr5").style.color = "grey";
+          document.getElementById("stargr1").style.color = "#ff9900";
+          document.getElementById("stargr2").style.color = "#ff9900";
+          document.getElementById("stargr3").style.color = "#ff9900";
+          document.getElementById("stargr4").style.color = "#ff9900";
+          document.getElementById("stargr5").style.color = "#ff9900";
+        }
+      }
+      function disable(number) {
+        if (number===1) {
+          document.getElementById("joingroupbtn1").disabled = "true";
+        }
+        else {
+          document.getElementById("joingroupbtn2").disabled = "true";
+        }
+      }
+    </script>
+  </body>
+</html>

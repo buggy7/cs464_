@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Projects Page Sort By Professor Ascending</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="testStyle.css" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="header" class="navbar navbar-fixed-top">
+    <figure id="logo" class="navbar-brand">
+      <a href="notificationsPage.html"><img src="Logo.png"></a>
+      <h1>
+        ΤΜΗΜΑ ΕΠΙΣΤΗΜΗΣ ΥΠΟΛΟΓΙΣΤΩΝ
+      </h1>
+      <h3>
+        Σύστημα Διαχείρισης Εργασιών
+      </h3>
+    </figure>
+    
+     <div class="container">
+        <div id="containerheader" class="navbar-header">
+          <!-- <a class="brand pull-left" href="#" id="logo"><img src="Logo.png"></a> -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="projectsPage.html" class="navbar-brand pull-right">(logout)</a>
+          <a href="profileView_MyProfile.html" class="navbar-brand pull-right">dagianta</a>
+          <form action="SearchResultsLoggedIn.html" class="navbar-form navbar-right pull-right" id="searchbar" role="search" method="post">
+            <div class="form-group has-feedback has-feedback-right">
+              <input type="text" placeholder="Search" name="search" class="form-control">
+              <i class="btn btn-link form-control-feedback glyphicon glyphicon-search"></i>
+            </div>
+          </form>
+          <a href="projectsPageLoggedIn.html" class="navbar-brand">
+            <img src="Projects.png">
+          </a>
+          <a href="myGroupsPage.html" class="navbar-brand">
+            <img src="Groups.png">
+          </a>
+          <a href="notificationsPage.html" class="navbar-brand">
+            <img src="Notifications.png">
+          </a>
+        </div>
+      </div>
+    </div>
+    <section id="filters">
+      <div class="col-md-4">
+        <h1 id="Filter_Results">FILTER BY:</h1><br>
+        <form action="" id="filtersinside">
+          <h1>COURSE</h1>
+          <div class="checkbox checks">
+            <label for=""><input type="checkbox"> CS335</label><br>
+            <label for=""><input type="checkbox"> CS340</label><br>
+            <label for=""><input type="checkbox"> CS359</label><br>
+            <button class="btn btn-link seemore">See More</button>
+          </div><br><br>
+          <h1>PROFESSOR</h1>
+          <div class="checkbox checks">
+            <label for=""><input type="checkbox"> Papadakos P.</label><br>
+            <label for=""><input type="checkbox"> Savvidis A.</label><br>
+            <label for=""><input type="checkbox"> Stephanidis C.</label><br>
+            <button class="btn btn-link seemore">See More</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <div class="col-md-8" id="subheader">
+      <div class="dropdown" id="sortbybtn">
+        <button class="btn btn-default dropdown-toggle pull-right" type="button" data-toggle="dropdown">
+          SORT BY <span class="caret"></span>
+        </button>
+         <ul id="dropdownmenu" class="dropdown-menu pull-right">
+          <li><a href="projectsPageLoggedInCSAscending.html">Course Code - Ascending</a></li>
+          <li><a href="projectsPageLoggedInCSDescending.html">Course Code - Descending</a></li>
+          <li><a href="projectsPageLoggedInProfessorAscending.html">Professor Name - Ascending</a></li>
+          <li><a href="projectsPageLoggedInProfessorDescending.html">Professor Name - Descending</a></li>
+        </ul>
+      </div>
+      <div class="page-header">
+        <h2>PROJECTS</h2>
+      </div>
+      <div>
+        <ul>  
+         <li>
+            <a href="">Shopping Web Page - CS359</a><br>
+            Professor: Yannis Tzitzikas/Panagiotis Papadakos<br>
+            Max Allowed Members: <b>2</b>
+          </li> 
+          <li>
+            <a href="">Information Retrieval System - CS463</a><br>
+            Professor: Yannis Tzitzikas<br>
+            Max Allowed Members: <b>2</b>
+          </li>
+          <li>
+            <a href="">Network Development - CS335</a><br>
+            Professor: Xenofondas Dimitropoulos<br>
+            Max Allowed Members: <b>3</b>
+          </li>  
+          <li>
+            <a href="">Crowd Sourcing - CS439</a><br>
+            Professor: Maria Papadopoulh<br>
+            Max Allowed Members: <b>2</b>
+          </li>
+          <li>
+            <a href="">Graphical User Interface Development for Mobile - CS464</a><br>
+            Professor: Constantine Stephanidis<br>
+            Max Allowed Members: <b>3</b>
+          </li>
+          <li>
+            <a href="projectDetails_LoggedOut.html">Graphical User Interface Development for Web - CS464</a><br>
+            Professor: Constantine Stephanidis<br>
+            Max Allowed Members: <b>3</b>
+          </li>
+          <li>
+            <a href="">Compiler Project - CS340</a><br>
+            Professor: Antonis Savvidis<br>
+            Max Allowed Members: <b>3</b>
+          </li>         
+        </ul>
+      </div>
+    </div>
+    <br><br><br>
+     <div id="footer" class="navbar navbar-fixed-bottom">
+      <div class="container">
+        <div id="containerheader" class="navbar-header">
+          <h1 id="lastlogin">Last login: Wednesday, 15 April 2015</h1>
+        </div>
+      </div>
+    </div>
+  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

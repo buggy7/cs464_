@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>My Groups Page Deleted</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="testStyle.css" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="header" class="navbar navbar-fixed-top">
+    <figure id="logo" class="navbar-brand">
+      <a href="notificationsPage.html"><img src="Logo.png"></a>
+      <h1>
+        ΤΜΗΜΑ ΕΠΙΣΤΗΜΗΣ ΥΠΟΛΟΓΙΣΤΩΝ
+      </h1>
+      <h3>
+        Σύστημα Διαχείρισης Εργασιών
+      </h3>
+    </figure>
+    
+      <div class="container">
+        <div id="containerheader" class="navbar-header">
+          <!-- <a class="brand pull-left" href="#" id="logo"><img src="Logo.png"></a> -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="projectsPage.html" class="navbar-brand pull-right">(logout)</a>
+          <a href="profileView_MyProfile.html" class="navbar-brand pull-right">dagianta</a>
+          <form action="SearchResultsLoggedIn.html" class="navbar-form navbar-right pull-right" id="searchbar" role="search" method="post">
+            <div class="form-group has-feedback has-feedback-right">
+              <input type="text" placeholder="Search" name="search" class="form-control">
+              <i class="btn btn-link form-control-feedback glyphicon glyphicon-search"></i>
+            </div>
+          </form>
+          <a href="projectsPageLoggedIn.html" class="navbar-brand">
+            <img src="Projects.png">
+          </a>
+          <a href="myGroupsPage.html" class="navbar-brand">
+            <img src="Groups.png">
+          </a>
+          <a href="notificationsPage.html" class="navbar-brand">
+            <img src="Notifications.png">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="width: 100%;">
+      <section id="stickynote">
+        <div class="col-md-4" id="stickycontainer">
+          <h4>Projects Due</h4>
+          <ul id="stickynotelist">
+            <li>CS463: Fri, 15 May</li>
+          </ul>
+        </div>
+      </section>
+      <div class="col-md-8" id="subheader">
+        <a href="createGroup.html"><button id="creategroupbtn" class="btn btn-default pull-right"><span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;Create Group</button></a>
+        <div class="page-header">
+          <h2>MY GROUPS</h2>
+        </div>
+        <div>
+          <ul id="groups">                            <!---TODO PROJECT LINKS-->
+            <li id="CS340">
+              <a href="groupDetailsPage_Invited.html">CS340 - Team02</a>
+              <button id="rejectbtn" class="btn btn-danger pull-right" onclick="reject1()">Reject</button>
+              <button id="acceptbtn" class="btn btn-success pull-right" onclick="accept1()">Accept</button>
+              <br>
+              Compiler Project - CS340
+            </li>
+            <li id="CS335">
+              <a href="groupDetailsPage_InvitedSecond.html">CS335 - Team03</a>
+              <button id="rejectbtn" class="btn btn-danger pull-right" onclick="reject2()">Reject</button>
+              <button id="acceptbtn" class="btn btn-success pull-right" onclick="accept2()">Accept</button>
+              <br>
+              Network Creation - CS335
+            </li>
+            <li>
+              <a href="">CS463 - Team10</a> (Member)<br>
+              Information Retrieval System - CS463<br>
+              Members: 2<b>/3</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pending Members:3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invited:1
+            </li>
+            <li id="CS340Member" hidden>
+              <a href="">CS340 - Team02</a> (Member)<br>
+              Compiler Project - CS340<br>
+              Members: 2<b>/3</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pending Members:1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invited:1
+            </li>
+            <li id="CS335Member" hidden>
+              <a href="">CS335 - Team03</a> (Member)<br>
+              Network Creation - CS335<br>
+              Members: 2<b>/3</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pending Members:1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invited:1
+            </li>
+            <li id="invite1">
+              <a href="groupDetailsPage_AsktoJoin.html">CS359 - Team08</a>
+              <button id="withdrawbtn" class="btn btn-info pull-right" onclick="withdrawInvite1()">Withdraw Request</button>
+              <br>
+              Shopping Assistant Mobile - CS359
+            </li>
+            <li id="invite2">
+              <a href="">CS439 - Team01</a>
+              <button id="withdrawbtn" class="btn btn-info pull-right" onclick="withdrawInvite2()">Withdraw Request</button>
+              <br>
+              Crowdsourcing Application - CS439
+            </li>
+            <li id="invite3">
+              <a href="">CS439 - Team02</a>
+              <button id="withdrawbtn" class="btn btn-info pull-right" onclick="withdrawInvite3()">Withdraw Request</button>
+              <br>
+              Crowdsourcing Application - CS439
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="width: 100%;">
+      <div class="col-md-8" id="secondsubheader">
+        <div class="page-header">
+          <h2>REJECTED REQUESTS</h2>
+        </div>
+        <div>
+        <div>
+          <ul id="groups">
+            <li>
+              <a href="groupDetailsPage_passenger.html">CS439 - Team04</a><br>
+              Crowdsourcing Application - CS439
+            </li>
+            <li>
+              <a href="">CS340 - Team03</a><br>
+              Compiler Project - CS340
+            </li>
+            <li>
+              <a href="">CS359 - Team05</a><br>
+              Shopping Assistant Mobile - CS359
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div id="footer" class="navbar navbar-fixed-bottom">
+      <div class="container">
+        <div id="containerheader" class="navbar-header">
+          <h1 id="lastlogin">Last login: Wednesday, 15 April 2015</h1>
+        </div>
+      </div>
+      <br><br><br>
+    </div>
+  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    function withdrawInvite1() {
+        document.getElementById("invite1").hidden=true;
+    }
+    function withdrawInvite2() {
+        document.getElementById("invite2").hidden=true;
+    }
+    function withdrawInvite3() {
+        document.getElementById("invite3").hidden=true;
+    }
+    function accept1() {
+        document.getElementById("CS340").hidden=true;
+        document.getElementById("CS340Member").hidden=false;
+    }
+    function reject1() {
+        document.getElementById("CS340").hidden=true;
+    }
+     function accept2() {
+        document.getElementById("CS335").hidden=true;
+        document.getElementById("CS335Member").hidden=false;
+    }
+    function reject2() {
+        document.getElementById("CS335").hidden=true;
+    }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Search Results Students Page</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="testStyle.css" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="header" class="navbar navbar-fixed-top">
+    <figure id="logo" class="navbar-brand">
+      <img src="Logo.png">
+      <h1>
+        ΤΜΗΜΑ ΕΠΙΣΤΗΜΗΣ ΥΠΟΛΟΓΙΣΤΩΝ
+      </h1>
+      <h3>
+        Σύστημα Διαχείρισης Εργασιών
+      </h3>
+    </figure>
+    
+    
+      <div class="container">
+        <div id="containerheader" class="navbar-header">
+          <!-- <a class="brand pull-left" href="#" id="logo"><img src="Logo.png"></a> -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="loginPage.html" class="navbar-brand pull-right">(login)</a>
+          <a href="" class="navbar-brand pull-right" hidden>username</a>
+          <form action="SearchResultsLoggedOut.html" class="navbar-form navbar-right pull-right" id="searchbar" role="search" method="post">
+            <div class="form-group has-feedback has-feedback-right">
+              <input type="text" placeholder="Search" name="search" class="form-control">
+              <i class="btn btn-link form-control-feedback glyphicon glyphicon-search"></i>
+            </div>
+          </form>
+          <a href="projectsPage.html" class="navbar-brand">
+            <img src="Projects.png">
+          </a>
+          <a href="#" class="navbar-brand" hidden>
+            <img src="Groups.png">
+          </a>
+          <a href="#" class="navbar-brand" hidden>
+            <img src="Notifications.png">
+          </a>
+        </div>
+      </div>
+    </div>
+    <section id="filters">
+
+      <div class="col-md-4">
+        <h1 id="Filter_Results">FILTER BY:</h1><br>
+        <form action="" id="filtersinside">
+          <h1>CATEGORY</h1>
+          <div class="checkbox checks">
+            <label for=""><input type="checkbox" onclick="filterStudents()" checked=""> Students</label><br>
+            <label for=""><input type="checkbox" onclick="filterProjects()"> Projects</label><br>
+          </div>  
+        </form>
+      </div>
+    </section>
+
+    <div class="col-md-8" id="subheader">
+      <div class="page-header">
+        <h2>SEARCH RESULTS</h2>
+      </div>
+      <p class="text-right" id="Results">Results: 2</p>
+      <ul>
+        <li>
+          <b>Students</b> 
+          <br><a href="profileView_OtherProfile.html">MAVRIDIS  GEORGIOS</a>
+          <br>MAVRIDIS GEORGIOS Contact Info Facebook: <a href="https://www.facebook.com/Blackvridis?fref=ts" style="color: #15344a; font-size: 17px;">George Mavridis</a>
+          <br><br>
+          <a href="">POUTOURIS EUAGGELOS</a>
+          <br>Comments <a href="profileView_OtherProfile.html"> Mavridis  Georgios</a> -15 Mar 2015 -18:15 Εργατικός και οργανωτικός.
+        </li>
+      </ul>
+
+
+
+    </div>
+    <br><br><br>
+
+
+      <div id="footer" class="navbar navbar-fixed-bottom"> </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      function filterStudents() {
+        window.location.href = "SearchResultsLoggedOutStudents.html"
+      }
+    </script>
+    <script type="text/javascript">
+      function filterProjects() {
+        window.location.href = "SearchResultsLoggedOutProjects.html"
+      }
+    </script>
+  </body>
+</html>

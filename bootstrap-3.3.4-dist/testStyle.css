@@ -1,0 +1,523 @@
+/* 
+    Document   : testStyle
+    Created on : Apr 11, 2015, 2:52:59 PM
+    Author     : Natasa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+#logo {
+	margin-top: -8px;
+	overflow: visible;
+}
+
+#logo h1 {
+	overflow: visible;
+	margin-top: -70px;
+	margin-left: 90px;
+	font-size: 17px;
+	color: #fff;
+}
+
+#logo h3 {
+	background-color: #fff;
+	overflow: visible;
+	margin-top: 20px;
+	margin-left: 90px;
+	font-size: 17px;
+	color: #15344a;
+	max-width: 250px;
+}
+
+i {
+	font-style: normal;
+	color: grey;
+}
+
+#comment {
+	font-size: 17px;
+	margin-top: -10px;
+}
+
+#comment2 {
+	font-size: 17px;
+	margin-top: -10px;
+}
+
+#date {
+	color: #dbdbea;
+}
+
+#header {
+    background-color: #15344a;
+    max-height: 50px;
+    width: 100%;
+    box-shadow: 0px 4px 4px grey;
+}
+
+#header a:link {
+	color: #fff;
+}
+
+#header a:visited {
+	color: #fff;
+}
+
+#header a:hover {
+	color: #0099ff;
+}
+
+#header a:active {
+	color: #fff;
+}
+
+#containerheader {
+	float: right;
+}
+
+#searchbar {
+	margin-right: 5px;
+}
+
+#subheader {
+	color: #15344a;
+	margin-top: 100px;
+	margin-left: 40px;
+
+}
+
+#secondsubheader {
+	color: #15344a;
+	margin-left: 40px;
+}
+
+#actionheader {
+	margin: 20px;
+}
+
+#infoheader {
+	margin: 20px;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+li {
+	font-size: 17px;
+	color: #15344a;
+	margin-left: -25px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #dbdbea;
+	padding-bottom: 20px;
+}
+
+li a:link {
+	font-weight: bold;
+	color: #15344a;
+}
+
+li a:visited {
+	font-weight: bold;
+	color: #15344a;
+}
+
+li a:hover {
+	font-weight: bold;
+	color: #0099ff;
+}
+
+li a:active {
+	font-weight: bold;
+	color: #0099ff;
+}
+
+#login {
+	margin-top: 5%;
+	margin-left: 30%;
+	max-width: 40%;
+}
+
+#loginbtn {
+	width: 15%;
+	margin-left: 42.5%;
+}
+
+#code {
+	margin-top: 5%;
+	width: 40%;
+}
+
+#filters {
+	float: left;
+	overflow: visible;
+	margin-top: 12%;
+	max-width: 18%;
+
+}
+
+#filters h1 {
+	font-size: 17px;
+}
+
+#filtersinside {
+	padding-left: 10px;
+}
+
+#stickynote {
+	float: right;
+	overflow: visible;
+	margin-top: 125px;
+	margin-right: 40px;
+	width: 250px;
+	height: 250px;
+	background-color: #f8f7b6;
+	-webkit-box-shadow: 5px 5px 7px grey;
+	-moz-box-shadow: 5px 5px 7px grey;
+}
+
+#stickycontainer {
+	width: 250px;
+	height: 250px;
+}
+
+#stickynotelist {
+	list-style-type: none;
+}
+
+#stickynotelist li {
+	border-bottom: none;
+	margin-left: -40px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+#embededlist li {
+	border-bottom: none;
+	margin-bottom: 0px;
+}
+
+#embededlist li a:link {
+	font-weight: normal;
+}
+
+#members {
+	border-bottom: 1px solid #dbdbea;
+	padding-bottom: 15px;
+}
+
+#members2 {
+	border-bottom: 1px solid #dbdbea;
+	padding-bottom: 15px;
+}
+
+
+#members li {
+	border-bottom: none;
+	padding-bottom: 0px;
+}
+
+#members li a:link {
+	font-weight: normal;
+}
+
+#members2 li {
+	border-bottom: none;
+	padding-bottom: 0px;
+}
+
+#members2 li a:link {
+	font-weight: normal;
+}
+
+h4 {
+	color: #15344a;
+	font-size: 17px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #15344a;
+}
+
+h5 {
+	color: #15344a;
+	font-size: 17px;
+	margin-bottom: 25px;
+}
+
+#commentsarea {
+	resize: none;
+	width: 420px;
+	height: 130px;
+	z-index: -1;
+}
+
+#optionalcomment {
+	resize: none;
+	width: 350px;
+	height: 80px;
+	z-index: -1;
+}
+
+#optsendbtn {
+	margin-top: -34px;
+	margin-left: -120px;
+}
+
+#sendbtn {
+	margin-top: -57px;
+	margin-left: 380px;
+}
+
+#removebtn {
+	margin-top: -75px;
+}
+
+#optcomm1 {
+	float: right;
+
+}
+
+#optcomm2 {
+	float: right;
+}
+
+#programming {
+	 list-style-type: none;
+}
+
+#programming li {
+	border-bottom: none;
+	margin-bottom: 3px;
+	padding-bottom: 0px;
+}
+
+#pastprojects li {
+	border-bottom: none;
+	margin-bottom: 3px;
+}
+
+.seemore {
+	padding-left: 0px;
+	float: left;
+	color: #15344a;
+	text-decoration: underline;
+}
+
+.checks {
+	color: grey;
+}
+
+#projects:hover {
+	color: #665544;
+}
+
+#actionlist {
+	list-style-type: none;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+
+#actionlist li a:link {
+	font-weight: normal;
+	color: #15344a;
+}
+
+#actionlist li a:visited {
+	font-weight: normal;
+	color: #15344a;
+}
+
+#actionlist li a:hover {
+	font-weight: normal;
+	color: #0099ff;
+}
+
+#actionlist li a:active {
+	font-weight: normal;
+	color: #0099ff;
+}
+
+#dropdownmenu {
+	margin-top: 35px;
+	margin-bottom: 0px;
+	padding-top: 20px;
+	padding-left: 25px;
+}
+
+#dropdownmenu li a:link {
+	text-decoration: none;
+	font-weight: normal;
+	color: #15344a;
+}
+
+#dropdownmenu li a:visited {
+	text-decoration: none;
+	font-weight: normal;
+	color: #15344a;
+}
+
+#dropdownmenu li a:hover {
+	text-decoration: none;
+	font-weight: normal;
+	color: #0099ff;
+}
+
+#dropdownmenu li a:active {
+	text-decoration: none;
+	font-weight: normal;
+	color: #0099ff;
+}
+
+#acceptbtn {
+	margin-right: 10px;
+}
+
+#completebtn {
+	margin-right: 10px;
+}
+
+#completebtn1 {
+	margin-right: 10px;
+	color: #5cb85c;
+	background-color: #dbdbea;
+	border: 1px solid #dbdbea;
+}
+
+#rejectbtn {
+	margin-right: 5px;
+}
+
+#sortbybtn {
+	margin-top: 25px;
+}
+
+#creategroupbtn {
+	margin-top: 25px;
+}
+
+#creategroupbtn1 {
+	margin-top: 0px;
+}
+
+#invitememberbtn {
+	margin-top: 0px;
+}
+
+#historylist {
+	list-style-type: none;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+
+#historylist li a:link {
+	font-weight: normal;
+	color: #15344a;
+}
+
+#historylist li a:visited {
+	font-weight: normal;
+	color: #15344a;
+}
+
+#historylist li a:hover {
+	font-weight: normal;
+	color: #0099ff;
+}
+
+#historylist li a:active {
+	font-weight: normal;
+	color: #0099ff;
+}
+
+#prof a {
+	color: #15344a;
+}
+
+.actioninfo {
+	padding-right: 5px;
+	float: right;
+	color: #15344a;
+}
+
+.glyphicon {
+	color: #15344a;
+}
+
+.star {
+	max-width: 1px;
+	color: grey;
+}
+
+#staryw {
+	max-width: 1px;
+	color: #ff9900;
+}
+
+.endorse {
+	max-width: 1px;.
+	padding: -30px -15px -35px -15px;
+	margin: -30px 0px -35px -20px;
+}
+
+
+.editglyph {
+	font-size: 15px;
+}
+
+.skillscounter {
+	color: #15344a;
+	font-weight: bold;
+}
+
+#projectdesc {
+	padding-left: 10px;
+	color: grey;
+	font-style: italic;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #dbdbea;
+}
+
+#seemoreactions {
+	font-size: 17px;
+	padding-right: 5px;
+	text-decoration: underline;
+	color: #15344a;
+}
+
+#seemorehistory {
+	font-size: 17px;
+	padding-right: 5px;
+	text-decoration: underline;
+	color: #15344a;
+}
+
+#footer {
+    background-color: #15344a;
+    height: 30px;
+    width: 100%;
+}
+
+#lastlogin {
+	color: #fff;
+	font-size: 17px;
+	margin-top: 6px;
+}
+
+#Results {
+	font-size: 17px;
+	margin-top: -40px;
+}
+
+#Filter_Results{
+	margin-left: 10px;
+}
+
+#Filter_Projects{
+	margin-left: 10px;
+}

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>George Mavridis Profile Page</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="testStyle.css" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="header" class="navbar navbar-fixed-top">
+    <figure id="logo" class="navbar-brand">
+      <a href="notificationsPage.html"><img src="Logo.png"></a>
+      <h1>
+        ΤΜΗΜΑ ΕΠΙΣΤΗΜΗΣ ΥΠΟΛΟΓΙΣΤΩΝ
+      </h1>
+      <h3>
+        Σύστημα Διαχείρισης Εργασιών
+      </h3>
+    </figure>
+    
+      <div class="container">
+        <div id="containerheader" class="navbar-header">
+          <!-- <a class="brand pull-left" href="#" id="logo"><img src="Logo.png"></a> -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="projectsPage.html" class="navbar-brand pull-right">(logout)</a>
+          <a href="profileView_MyProfile.html" class="navbar-brand pull-right">dagianta</a>
+          <form action="SearchResultsLoggedIn.html" class="navbar-form navbar-right pull-right" id="searchbar" role="search" method="post">
+            <div class="form-group has-feedback has-feedback-right">
+              <input type="text" placeholder="Search" name="search" class="form-control">
+              <i class="btn btn-link form-control-feedback glyphicon glyphicon-search"></i>
+            </div>
+          </form>
+          <a href="projectsPageLoggedIn.html" class="navbar-brand">
+            <img src="Projects.png">
+          </a>
+          <a href="myGroupsPage.html" class="navbar-brand">
+            <img src="Groups.png">
+          </a>
+          <a href="notificationsPage.html" class="navbar-brand">
+            <img src="Notifications.png">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-11" id="subheader">
+      <div class="page-header">
+        <h2>PROFILE</h2>
+      </div>
+      <div class="dropdown" id="sortbybtn">
+        <button class="btn btn-default dropdown-toggle pull-right" type="button" data-toggle="dropdown">
+          INVITE TO <span class="caret"></span>
+        </button>
+        <ul id="dropdownmenu" class="dropdown-menu pull-right">
+          <li><a href="">CS435 - Team09</a></li>
+          <li><a href="">CS553 - Team11</a></li>
+          <li><a href="">CS558 - Team02</a></li>
+          <li><a href="createGroup_OtherProfile.html">New Group - Create</a></li>
+        </ul>
+      </div>
+      <div style="display: inline;width: 150px;float: left;">
+        <img src="Pic1.jpg" width="120px" height="120px">
+      </div>
+      <div>
+        <h2>MAVRIDIS GEORGIOS</h2>
+        <h2 style="margin-bottom: 5px;">Contact Info:</h2>
+        <p style="font-size: 17px; display: inline;">Facebook: </p><a href="https://www.facebook.com/Blackvridis?fref=ts" style="color: #15344a; font-size: 17px;">George Mavridis</a><br>
+        <p style="font-size: 17px; display: inline;">Gmail: </p><a href="mailto:giorgosmavridis@gmail.com" style="color: #15344a; font-size: 17px;">giorgosmavridis@gmail.com</a>
+      </div>
+      <br>
+      <div style="border-top: 1px solid #dbdbea; margin-top: 5px; padding-top: 15px;">
+        <h5>Skills</h5>
+        <div>
+          <div style="display: inline; width: 350px; float: left;">
+            <h5 style="margin-bottom: 10px;">Programming Languages</h5>
+            <ul id="programming">
+              <li><i><i id="sc1" class="skillscounter"></i> C</i> <button id="endorse1" class="btn btn-link" onclick="endorse(1)"><span id="endorse1" class="glyphicon glyphicon-plus endorse"></span></button></li>
+              <li><i><i id="sc2" class="skillscounter">3</i> C++</i> <button id="endorse2" class="btn btn-link" onclick="endorse(2)"><span id="endorse2" class="glyphicon glyphicon-plus endorse"></span></button></li>
+              <li><i><i id="sc3" class="skillscounter">1</i> Java</i> <button id="endorse3" class="btn btn-link" onclick="endorse(3)"><span id="endorse3" class="glyphicon glyphicon-plus endorse"></span></button></li>
+              <li><i><i id="sc4" class="skillscounter">4</i> HTML5</i> <button id="endorse4" class="btn btn-link" onclick="endorse(4)"><span id="endorse4" class="glyphicon glyphicon-plus endorse"></span></button></li>
+              <li><i><i id="sc5" class="skillscounter">2</i> CSS</i> <button id="endorse5" class="btn btn-link" onclick="endorse(5)"><span id="endorse5" class="glyphicon glyphicon-plus endorse"></span></button></li>
+              <li id="hiddenattribute1" hidden><i><i id="sc6" class="skillscounter">3</i> JavaScript</i> <button id="endorse6" class="btn btn-link" onclick="endorse(6)"><span id="endorse6" class="glyphicon glyphicon-plus endorse"></span></button></li>
+              <li id="hiddenattribute2" hidden><i><i id="sc7" class="skillscounter">0</i> Python</i> <button id="endorse7" class="btn btn-link" onclick="endorse(7)"><span id="endorse7" class="glyphicon glyphicon-plus endorse"></span></button></li>
+              <li><button id="seemorebtn" class="btn btn-link seemore" style="font-size: 17px; padding-top:0px;" onclick="seeMore()">See More</button></li>
+            </ul>
+          </div>
+          <div style="float: left;">
+            <h5 style="margin-bottom: 10px;">Programming Tools</h5>
+            <ul id="programming">
+              <li><i><i id="sc8" class="skillscounter">5</i> NetBeans</i> <button id="endorse8" class="btn btn-link" onclick="endorse(8)"><span id="endorse8" class="glyphicon glyphicon-plus endorse"></span></button></li>
+              <li><i><i id="sc9" class="skillscounter">1</i> Eclipse</i> <button id="endorse9" class="btn btn-link" onclick="endorse(9)"><span id="endorse9" class="glyphicon glyphicon-plus endorse"></span></button></li>
+              <li><i><i id="sc10" class="skillscounter">0</i> Visual Studio</i> <button id="endorse10" class="btn btn-link" onclick="endorse(10)"><span id="endorse10" class="glyphicon glyphicon-plus endorse"></span></button></li>
+              <li><i><i id="sc11" class="skillscounter">2</i> Bootstrap</i> <button id="endorse11" class="btn btn-link" onclick="endorse(11)"><span id="endorse11" class="glyphicon glyphicon-plus endorse"></span></button></li>
+            </ul>
+          </div>
+        </div><br><br><br><br>
+      </div><br>
+      <br><br><br>
+      <br><br><br>
+      <br><br><br>
+      <div id="brakes" hidden>
+        <br><br><br>
+      </div>
+      <div style="border-top: 1px solid #dbdbea; margin-top: 5px; padding-top: 15px;">
+        <h5>Availability</h5>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Time</th>
+              <th>Place</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>Monday</b></td>
+              <td>12:00 - 18:00</td>
+              <td>University</td>
+            </tr>
+            <tr>
+              <td><b>Tuesday</b></td>
+              <td>18:00 - 23:00</td>
+              <td>Home</td>
+            </tr>
+            <tr>
+              <td><b>Wednesday</b></td>
+              <td>12:00 - 18:00</td>
+              <td>University</td>
+            </tr>
+            <tr>
+              <td><b>Thursday</b></td>
+              <td>Not Available</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td><b>Friday</b></td>
+              <td>14:00 - 16:00</td>
+              <td>University</td>
+            </tr>
+            <tr>
+              <td><b>Saturday</b></td>
+              <td>Anytime</td>
+              <td>Anywhere</td>
+            </tr>
+            <tr>
+              <td><b>Sunday</b></td>
+              <td>Anytime</td>
+              <td>Home</td>
+            </tr>
+          </tbody>
+        </table>
+      </div><br>
+      <div style="border-top: 1px solid #dbdbea; margin-top: 5px; padding-top: 15px;">
+        <h5>Projects</h5>
+        <ul id="pastprojects">
+          <li><a href="">Compiler Project - CS340</a> <i>(Year: 2014)</i></li>
+          <li><a href="profileView_ProjectDetails.html">Tichu - CS252</a> <i>(Year: 2013)</i></li>
+        </ul>
+      </div>
+      <div style="border-top: 1px solid #dbdbea; margin-top: 5px; padding-top: 15px;">
+        <h5>Groups</h5>
+        <ul id="groups">                            <!---TODO PROJECT LINKS-->
+          <li id="withdraw1">
+            <a href="groupDetailsPage_AsktoJoin.html">CS359 - Team08</a>
+            <button id="withdrawbtn" class="btn btn-info pull-right" onclick="withdrawRequest(1)">Withdraw Request</button>
+            <br>
+            Shopping Assistant Mobile - CS359
+          </li>
+          <li id="withdraw2">
+            <a href="">CS439 - Team01</a>
+            <button id="withdrawbtn" class="btn btn-info pull-right" onclick="withdrawRequest(2)">Withdraw Request</button>
+            <br>
+            Crowdsourcing Application - CS439
+          </li>
+          <li id="visible1">
+            <a href="groupDetailsPage_Invited.html">CS340 - Team02</a>
+            <button id="rejectbtn" class="btn btn-danger pull-right" onclick="rejectPressed(1)">Reject</button>
+            <button id="acceptbtn" class="btn btn-success pull-right" onclick="acceptPressed(1)">Accept</button>
+            <br>
+            Compiler Project - CS340
+          </li>
+          <li id="visible2">
+            <a href="">CS335 - Team03</a>
+            <button id="rejectbtn" class="btn btn-danger pull-right" onclick="rejectPressed(2)">Reject</button>
+            <button id="acceptbtn" class="btn btn-success pull-right" onclick="acceptPressed(2)">Accept</button>
+            <br>
+            Network Creation - CS335
+          </li>
+          <li>
+            <a href="groupDetailsPage_Admin.html">CS464 - Team07</a> (Creator)<br>
+            Graphical User Interface Development for Web - CS464<br>
+            Members: <b>2/3</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pending Members:0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invited:0
+          </li>
+          <li>
+            <a href="">CS463 - Team10</a> (Member)<br>
+            Information Retrieval System - CS463<br>
+            Members: 2<b>/3</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pending Members:3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invited:1
+          </li>
+          <li id="hidden1" hidden>
+            <a href="groupDetailsPage_Invited2Admin.html">CS340 - Team02</a> (Member)<br>
+            Compiler Project - CS340<br>
+            Members: 2<b>/3</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pending Members:3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invited:1
+          </li>
+          <li id="hidden2" hidden>
+            <a href="">CS335 - Team03</a> (Member)<br>
+            Network Creation - CS335<br>
+            Members: 2<b>/3</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pending Members:3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invited:1
+          </li>
+        </ul>
+      </div><br>
+      <div style="border-top: 1px solid #dbdbea; margin-top: 5px; padding-top: 15px;">
+        <h5>Comments</h5>
+        <div class="form-group">
+          <textarea class="form-control" placeholder="Leave a comment" id="commentsarea"></textarea>
+          <button id="sendbtn" class="btn btn-default" onclick="insertComment()"><span class="glyphicon glyphicon-send"></span></button>
+        </div>
+        <br>
+        <ul id="members">
+          <li><a href="">Saridakis Eleutherios</a><i> - 15 Mar 2015 - 18:15</i></li>
+          <p id="comment"><i>Εργατικός και οργανωτικός.</i></p>
+          <li id="comment1" hidden><a href="profileView_MyProfile.html">Ntagianta Anastasia</a><i> - # May 2015 - ##:##</i></li>
+          <p id="comment2" hidden><i>You have successfully inserted a comment</i></p>
+        </ul>
+         
+        <br><br><br>
+      </div>
+    </div>
+    <br><br><br>
+
+    <div id="footer" class="navbar navbar-fixed-bottom">
+      <div class="container">
+        <div id="containerheader" class="navbar-header">
+          <h1 id="lastlogin">Last login: Wednesday, 15 April 2015</h1>
+        </div>
+      </div>
+    </div>
+  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      function seeMore() {
+        if (document.getElementById("seemorebtn").innerHTML==="See More") {
+          document.getElementById("hiddenattribute1").hidden = false;
+          document.getElementById("hiddenattribute2").hidden = false;
+          document.getElementById("brakes").hidden = false;
+          document.getElementById("seemorebtn").innerHTML = "See Less";
+        }
+        else {
+          document.getElementById("hiddenattribute1").hidden = true;
+          document.getElementById("hiddenattribute2").hidden = true;
+          document.getElementById("brakes").hidden = true;
+          document.getElementById("seemorebtn").innerHTML = "See More";
+        }
+      }
+      function disable(number) {
+        if (number===1) {
+          document.getElementById("joingroupbtn1").disabled = "true";
+          document.getElementById("joingroupbtn1").innerHTML = "Request Sent";
+        }
+        else {
+          document.getElementById("joingroupbtn2").disabled = "true";
+          document.getElementById("joingroupbtn2").innerHTML = "Request Sent";
+        }
+      }
+      counter = 7;
+      document.getElementById("sc1").innerHTML = 7;
+      function endorse(number) {
+        if (number===1) {
+          document.getElementById("sc1").innerHTML = 8;
+          document.getElementById("endorse1").hidden=true;
+        }
+      }
+      function insertComment(){
+        document.getElementById("comment1").hidden=false;
+        document.getElementById("comment2").hidden=false;
+      }
+      function withdrawRequest(number){
+        if(number===1){
+          document.getElementById("withdraw1").hidden=true;
+        }
+        else{
+          document.getElementById("withdraw2").hidden=true;
+        }
+      }
+      function acceptPressed(number){
+        if (number===1){
+          document.getElementById("hidden1").hidden=false;
+          document.getElementById("visible1").hidden=true;
+        }
+        else{
+          document.getElementById("visible2").hidden=true;
+          document.getElementById("hidden2").hidden=false;
+        }
+      }
+      function rejectPressed(number){
+        if (number===1){
+          document.getElementById("visible1").hidden=true;
+        }
+        else{
+          document.getElementById("visible2").hidden=true;
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Home Page</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="testStyle.css" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="header" class="navbar navbar-fixed-top">
+    <figure id="logo" class="navbar-brand">
+      <a href="notificationsPage.html"><img src="Logo.png"></a>
+      <h1>
+        ΤΜΗΜΑ ΕΠΙΣΤΗΜΗΣ ΥΠΟΛΟΓΙΣΤΩΝ
+      </h1>
+      <h3>
+        Σύστημα Διαχείρισης Εργασιών
+      </h3>
+    </figure>
+    
+      <div class="container">
+        <div id="containerheader" class="navbar-header">
+          <!-- <a class="brand pull-left" href="#" id="logo"><img src="Logo.png"></a> -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="projectsPage.html" class="navbar-brand pull-right">(logout)</a>
+          <a href="profileView_MyProfile.html" class="navbar-brand pull-right">dagianta</a>
+          <form action="SearchResultsLoggedIn.html" class="navbar-form navbar-right pull-right" id="searchbar" role="search" method="post">
+            <div class="form-group has-feedback has-feedback-right">
+              <input type="text" placeholder="Search" name="search" class="form-control">
+              <i class="btn btn-link form-control-feedback glyphicon glyphicon-search"></i>
+            </div>
+          </form>
+          <a href="projectsPageLoggedIn.html" class="navbar-brand">
+            <img src="Projects.png">
+          </a>
+          <a href="myGroupsPage.html" class="navbar-brand">
+            <img src="Groups.png">
+          </a>
+          <a href="notificationsPage.html" class="navbar-brand">
+            <img src="Notifications.png">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="width: 90%;" id="subheader">
+      <div class="page-header">
+        <h2>NOTIFICATIONS</h2>
+      </div>
+      <div class="container" style="width: 90%;" id="actionheader">
+        <h2>ACTIONS</h2>
+      </div>
+      <div class="container" style="width: 90%;">
+        <ul id="actionlist">                            <!---TODO LINKS-->
+          <li id="Poutouris">
+            <a href="">Poutouris Euaggelos</a>
+            invited you to:
+            <a href="">CS464 - Team07</a>
+            <button id="rejectbtn" class="btn btn-danger pull-right" onclick="rejectclickedP()">Reject</button>
+            <button id="acceptbtn" class="btn btn-success pull-right" onclick="acceptclickedP()">Accept</button>
+          </li>
+          <li id="Mavridis">
+            <a href="profileView_OtherProfile.html">Mavridis Georgios</a>
+            requested to join:
+            <a href="">CS340 - Team03</a>
+            <button id="rejectbtn" class="btn btn-danger pull-right" onclick="rejectclickedM()">Reject</button>
+            <button id="acceptbtn" class="btn btn-success pull-right" onclick="acceptclickedM()">Accept</button>
+          </li>
+        </ul>
+        <ul id="historylist"> 
+                                   <!---TODO LINKS-->
+          <li id="Poutouris2" hidden>
+            <a href="">Poutouris Euaggelos</a>
+            invited you to:
+            <a href="">CS464 - Team07</a>
+            <p class="actioninfo">Accepted</p>
+          </li> 
+          <li id="Poutouris3" hidden>
+            <a href="">Poutouris Euaggelos</a>
+            invited you to:
+            <a href="">CS464 - Team07</a>
+            <p class="actioninfo">Rejected</p>
+          </li> 
+          <li id="Mavridis2" hidden>
+            <a href="">Mavridis Georgios</a>
+            requested to join:
+            <a href="">CS340 - Team03</a>
+            <p class="actioninfo">Accepted</p>
+          </li>     
+          <li id="Mavridis3" hidden>
+            <a href="">Mavridis Georgios</a>
+            requested to join:
+            <a href="">CS340 - Team03</a>
+            <p class="actioninfo">Rejected</p>
+          </li>                   
+          <li>
+            <a href="">Saridakis Eleutherios</a>
+            invited you to:
+            <a href="">CS464 - Team02</a>
+            <p class="actioninfo">Accepted</p>
+          </li>
+          <li>
+            <a href="">Vardakis Georgios</a>
+            requested to join:
+            <a href="">CS335 - Team12</a>
+            <p class="actioninfo">Rejected</p>
+          </li>
+          <li>
+            <a href="">Nicodemou Vassilis</a>
+            requested to join:
+            <a href="">CS463 - Team10</a>
+            <p class="actioninfo">Rejected</p>
+          </li>
+          <li id="hiddenattribute1" hidden>
+            <a href="">Manolis Kodaksis</a>
+            requested to join:
+            <a href="">CS215 - Team13</a>
+            <p class="actioninfo">Accepted</p>
+          </li>
+          <li id="hiddenattribute2" hidden>
+            <a href="">Mparka Aleksandra</a>
+            requested to join:
+            <a href="">CS340 - Team05</a>
+            <p class="actioninfo">Rejected</p>
+          </li>
+          <button id="seemoreactions" class="btn btn-link pull-right" onclick="seeMore()">See More</button>
+        </ul>
+      </div>
+      <div class="container" id="infoheader" style="width: 90%;">
+        <h2>INFO</h2>
+      </div>
+      <div class="container" style="width: 90%;">
+        <ul id="actionlist">                            <!---TODO LINKS-->
+          <li>
+            <a href="">Degkleri Eirini</a>
+            rejected your invitation to:
+            <a href="">CS335 - Team04</a>
+          </li>
+          <li>
+            <a href="">Nikodemou Vassilis</a>
+            accepted your invitation to:
+            <a href="">CS335 - Team04</a>
+          </li>
+          <li>
+            <a href="">Stefanou Nick</a>
+            rejected your request to join:
+            <a href="">CS359 - Team13</a>
+          </li>
+          <li>
+            <a href="">Vardakis Georgios</a>
+            accepted your request to join:
+            <a href="">CS463 - Team01</a>
+          </li>
+          <li>
+            <a href="profileView_OtherProfile.html">Mavridis Georgios</a>
+            rejected your invitation to:
+            <a href="">CS340 - Team06</a>
+          </li>
+           <li id="hiddenattribute3" hidden>
+            <a href="">Chadinh Elena</a>
+            rejected your request to join:
+            <a href="">CS463 - Team5</a>
+          </li>
+          <button id="seemorehistory" class="btn btn-link pull-right" onclick="seeMore2()">See More</button>
+        </ul>
+      </div>
+    </div>
+    <br><br><br>
+
+    <div id="footer" class="navbar navbar-fixed-bottom">
+      <div class="container">
+        <div id="containerheader" class="navbar-header">
+          <h1 id="lastlogin">Last login: Wednesday, 15 April 2015</h1>
+        </div>
+      </div>
+    </div>
+  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      function rejectclickedP() {
+        document.getElementById("Poutouris").hidden=true;
+         document.getElementById("Poutouris3").hidden=false;
+      }
+      function acceptclickedP() {
+        document.getElementById("Poutouris").hidden=true;
+        document.getElementById("Poutouris2").hidden=false;
+      }
+      function rejectclickedM() {
+        document.getElementById("Mavridis").hidden=true;
+        document.getElementById("Mavridis3").hidden=false;
+      }
+      function acceptclickedM() {
+        document.getElementById("Mavridis").hidden=true;
+        document.getElementById("Mavridis2").hidden=false;
+      }
+      function seeMore() {
+        if (document.getElementById("seemoreactions").innerHTML==="See More") {
+          document.getElementById("hiddenattribute1").hidden = false;
+          document.getElementById("hiddenattribute2").hidden = false;
+          document.getElementById("seemoreactions").innerHTML = "See Less";
+        }
+        else {
+          document.getElementById("hiddenattribute1").hidden = true;
+          document.getElementById("hiddenattribute2").hidden = true;
+          document.getElementById("seemoreactions").innerHTML = "See More";
+        }
+      }
+       function seeMore2() {
+        if (document.getElementById("seemorehistory").innerHTML==="See More") {
+          document.getElementById("hiddenattribute3").hidden = false;
+          document.getElementById("seemorehistory").innerHTML = "See Less";
+        }
+        else {
+          document.getElementById("hiddenattribute3").hidden = true;
+          document.getElementById("seemorehistory").innerHTML = "See More";
+        }
+      }
+    </script>
+  </body>
+</html>
